@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_Home">
+
+    <fragment
+        android:id="@+id/nav_Home"
+        android:name="com.example.intellectacademy.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_Courses"
+        android:name="com.example.intellectacademy.ui.dashboard.CoursesFragment"
+        android:label="@string/title_Courses"
+        tools:layout="@layout/fragment_courses" />
+
+    <fragment
+        android:id="@+id/nav_Classes"
+        android:name="com.example.intellectacademy.ui.notifications.ClassesFragment"
+        android:label="@string/title_Classes"
+        tools:layout="@layout/fragment_classes" />
+    <fragment
+        android:id="@+id/nav_Quiz"
+        android:name="com.example.intellectacademy.QuizFragment"
+        android:label="@string/title_Quiz"
+        tools:layout="@layout/fragment_quiz" />
+    <fragment
+        android:id="@+id/nav_Instructors"
+        android:name="com.example.intellectacademy.InstructorsFragment"
+        android:label="@string/title_Instructors"
+        tools:layout="@layout/fragment_instructors" />
+</navigation>
